@@ -156,8 +156,13 @@
 
 .field-editor__error {
   margin: 0;
-  color: #b91c1c;
+  border: 1px solid #fdba74;
+  background: #fff7ed;
+  color: #9a3412;
+  border-radius: 8px;
+  padding: 0.35rem 0.55rem;
   font-size: 0.82rem;
+  font-weight: 600;
 }
 
 .form-control {
@@ -224,8 +229,21 @@
 
 .preview-error {
   margin: 0.22rem 0 0;
-  color: #b91c1c;
+  border: 1px solid #fdba74;
+  background: #fff7ed;
+  color: #9a3412;
+  border-radius: 8px;
+  padding: 0.3rem 0.5rem;
   font-size: 0.82rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.preview-control input[aria-invalid="true"],
+.field-editor input[aria-invalid="true"],
+.json-panel__textarea[aria-invalid="true"] {
+  border-color: #fb923c;
+  box-shadow: 0 0 0 3px rgba(251, 146, 60, 0.18);
 }
 
 .preview-empty {
